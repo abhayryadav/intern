@@ -2,9 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
-const authRoutes = require('./routes/auth');
-const leadRoutes = require('./routes/leads');
-const { connectDB } = require('./config/db');
+const authRoutes = require('../routes/auth');
+const leadRoutes = require('../routes/leads');
+const { connectDB } = require('../config/db');
 require('dotenv').config();
 const app = express();
 
