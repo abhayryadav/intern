@@ -1,8 +1,8 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
-const { connectDB } = require('../config/db');
-const User = require('../models/User');
-const Lead = require('../models/Lead');
+const { connectDB } = require('./config/db');
+const User = require('./models/User');
+const Lead = require('./models/Lead');
 const { faker } = require('@faker-js/faker'); // Correct import
 
 const seedDatabase = async () => {
